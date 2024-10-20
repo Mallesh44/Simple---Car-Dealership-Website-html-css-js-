@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopGear Car Dealership</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="TopGear.png" alt="TopGear Logo" class="logo">
+            <h1>TopGear</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#models">Models</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#partners">Partners</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li> <!-- Link to cart.html -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <section id="home">
+        <h2>Deal of the Day: 2009 Ford Fiesta 1.6s</h2> <!-- Changed to Deal of the Day -->
+        <div class="deal-of-the-day"> <!-- Added a container for styling -->
+            <img src="fiesta2.jpg" alt="2009 Ford Fiesta 1.6s">
+            <p><strong>Model:</strong> Fiesta 1.6s</p>
+            <p><strong>Year:</strong> 2009</p>
+            <p><strong>Make:</strong> Ford</p>
+            <p><strong>Kilometers:</strong> 50,000 km</p>
+            <p><strong>Engine:</strong> 1.6L Inline-4</p>
+            <p><strong>Status:</strong> single owner   </p>
+            <p><strong>Price:</strong> ₹8882/month in 4 years...just pay 30% advance.</p>
+            <p><strong>*Promotional packages exclusively for loyal customers!</strong></p>
+        </div>
+    </section>
+    
+    <section id="models">
+        <h2>Car Models</h2>
+        <div class="car-grid">
+            <div class="car-item">
+                <img src="mustang.jpg" alt="Ford Mustang Shelby GT500">
+                <h3>Ford Mustang Shelby GT500</h3>
+                <p>Price: ₹80,00,000</p>
+                <button onclick="addToCart('Ford Mustang Shelby GT500')">Add to Cart</button>
+                <button onclick="buyNow('Ford Mustang Shelby GT500')">Buy Now</button>
+            </div>
+            <div class="car-item">
+                <img src="honda-city-type-z-manual.jpg" alt="Honda City Type Z Modified">
+                <h3>Honda City Type Z Modified</h3>
+                <p>Price: ₹5,00,000</p>
+                <button onclick="addToCart('Honda City Type Z Modified')">Add to Cart</button>
+                <button onclick="buyNow('Honda City Type Z Modified')">Buy Now</button>
+            </div>
+            <div class="car-item">
+                <img src="Volkswagen-Polo-Modified.jpg" alt="Legend edition VW Polo">
+                <h3>Legend edition VW Polo</h3>
+                <p>Price: ₹30,00,000</p>
+                <button onclick="addToCart('Legend edition VW Polo')">Add to Cart</button>
+                <button onclick="buyNow('Legend edition VW Polo')">Buy Now</button>
+            </div>
+            <div class="car-item">
+                <img src="lancer.jpg" alt="Mitsubishi Lancer 2003-2005">
+                <h3>Mitsubishi Lancer 2003-2005</h3>
+                <p>Price: ₹6,00,000</p>
+                <button onclick="addToCart('Mitsubishi Lancer 2003-2005')">Add to Cart</button>
+                <button onclick="buyNow('Mitsubishi Lancer 2003-2005')">Buy Now</button>
+            </div>
+            <div class="car-item">
+                <img src="modified-ford-ecosport.jpg" alt="Modified Ford Ecosport 2018">
+                <h3>Modified Ford Ecosport 2018</h3>
+                <p>Price: ₹14,00,000</p>
+                <button onclick="addToCart('Modified Ford Ecosport 2018')">Add to Cart</button>
+                <button onclick="buyNow('Modified Ford Ecosport 2018')">Buy Now</button>
+            </div>
+            <div class="car-item">
+                <img src="honda_civic.jpg" alt="Honda Civic 2007 Modified">
+                <h3>Honda Civic 2007 Modified</h3>
+                <p>Price: ₹5,00,000</p>
+                <button onclick="addToCart('Honda Civic 2007 Modified')">Add to Cart</button>
+                <button onclick="buyNow('Honda Civic 2007 Modified')">Buy Now</button>
+            </div>
+            <div class="car-item">
+                <img src="fiesta 1.6s.jpg" alt="Ford fiesta 1.6s">
+                <h3>Ford fiesta 1.6s</h3>
+                <p>Price: ₹4,50,000</p>
+                <button onclick="addToCart('Ford fiesta 1.6s')">Add to Cart</button>
+                <button onclick="buyNow('Ford fiesta 1.6s')">Buy Now</button>
+            </div>
+            <div class="car-item">
+                <img src="octavia vrs.jpg" alt="2017-2018  Skoda Octavia VRS">
+                <h3>2017-2018  Skoda Octavia VRS</h3>
+                <p>Price: ₹16,00,000</p>
+                <button onclick="addToCart('2017-2018  Skoda Octavia VRS')">Add to Cart</button>
+                <button onclick="buyNow('2017-2018  Skoda Octavia VRS')">Buy Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services-container">
+            <img src="services.jpg" alt="Service Image">
+            <ul>
+                <li>>Car Dealership</li>
+                <li>>Free consultations</li>
+                <li>>Preferential loan packages</li>
+                <li>>Quick liquidation</li>
+                <li>>Fast money transfer</li>
+            </ul>
+            <button class="contact-sellers-button">Contact Sellers</button>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        
+        <div    class="ad-container">
+            <img src="ad_1.jpg" alt="Advertisement 1" class="ad-image">
+            <img src="ad_2.jpg" alt="Advertisement 2" class="ad-image">
+        </div>
+    </section>
+    
+    
+    <section id="partners">
+        <h2>Our Partners</h2>
+        <div class="partner-logos">
+            <img src="partner1.jpg" alt="Partners Image 1">
+            <img src="partner2.jpg" alt="Partners Image 2">
+        </div>
+    </section>
+    
+    
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For support, call 1800 8192 (Mon-Fri: 8am-6pm, Sat: 8am-12pm)</p>
+        <p>Download our app on <a href="#">Google Play</a> or the <a href="#">App Store</a>.</p>
+        <p>Follow us on <a href="#">Branch System</a>, <a href="#">Terms of Use</a>, <a href="#">Safety and Security</a>.</p>
+        <img src="end.jpg" alt="end image">
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 TopGear</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
